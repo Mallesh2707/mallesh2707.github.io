@@ -1,2 +1,2 @@
-# -mallesh2707-.github.io
+# mallesh2707.github.io
 My personal website and portfolio
