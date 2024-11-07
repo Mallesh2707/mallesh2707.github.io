@@ -3,96 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Mallesh Neelakantappa - Android Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        /* Header Styling */
+        .header {
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+            position: relative;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .cover-photo {
+            position: relative;
+        }
+
+        .cover-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-wrapper {
+            position: absolute;
+            top: 130px;
+            left: calc(50% - 60px);
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .name {
+            margin-top: 70px;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .title {
+            margin: 5px 0;
+            font-weight: lighter;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            background-color: #4CAF50;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-bar li {
+            display: inline;
+        }
+
+        .nav-bar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .nav-bar a:hover {
+            background-color: #45a049;
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .contact-details p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .contact-details i {
+            margin-right: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #e0f7fa;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        ul li:hover {
+            background: #b2ebf2;
+        }
+
+        /* Job Experience Card Styles */
+        .job {
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .job:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .job img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        .job h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        footer a {
+            color: #d4f0d4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="header">
             <div class="cover-photo">
                 <img src="https://media.licdn.com/dms/image/C5612AQHdn7eC1YEUgg/article-cover_image-shrink_600_2000/0/1646721442724?e=2147483647&v=beta&t=8Dvmvy084A16E00IjAXkZ49g6eFLDTtph1w3OA-uA_M" alt="Cover Photo" class="cover-image">
-                <img src="malli-job-profile-pic.jpeg" alt="Mallesh Neelakantappa" class="profile-pic">
+                <div class="profile-wrapper">
+                    <img src="malli-job-profile-pic.jpeg" alt="Mallesh Neelakantappa" class="profile-pic">
+                </div>
             </div>
-            <h1>Mallesh Neelakantappa</h1>
-            <h2>Android Developer</h2>
+            <h1 class="name">Mallesh Neelakantappa</h1>
+            <h2 class="title">Senior Android Developer</h2>
         </header>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#contact-info">Contact</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
 
         <section id="contact-info">
             <h2>Contact Information</h2>
-            <ul>
-                <li><strong>E-Mail:</strong> <a href="mailto:Mallesh.neelakantappa7@gmail.com">Mallesh.neelakantappa7@gmail.com</a></li>
-                <li><strong>Phone:</strong> +1 (945) 900 1556</li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mallesh-neelakantappa-06b420130">Mallesh Neelakantappa</a></li>
-            </ul>
+            <div class="contact-details">
+                <p><i class="fas fa-envelope"></i> <strong>E-Mail:</strong> <a href="mailto:Mallesh.neelakantappa7@gmail.com">Mallesh.neelakantappa7@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +1 (945) 900 1556</p>
+                <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mallesh-neelakantappa-06b420130">Mallesh Neelakantappa</a></p>
+            </div>
         </section>
 
         <section id="summary">
             <h2>Professional Summary</h2>
+            <p class="summary-text">Highly skilled Android Developer with 6 years of experience in developing robust and user-friendly mobile applications. Expert in Java and Kotlin, with deep knowledge of modern Android development practices and architectural patterns.</p>
             <ul>
-                <li>Android Developer with 6 years of experience in designing, developing, and maintaining Android applications.</li>
-                <li>Proficient in Java and Kotlin programming languages, with a strong understanding of Android SDK components.</li>
-                <li>Sound understanding of mobile app architectural patterns like MVVM, MVP, and MVC.</li>
-                <li>Experience with asynchronous programming concepts like Kotlin Coroutines and Java threads.</li>
-            </ul>
-        </section>
-
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            
-            <div class="job">
-                <img src="lithium-logo.png" alt="Lithium Urban Technologies Logo">
-                <div>
-                    <h3>Lithium Urban Technologies | Software Engineer Android</h3>
-                    <p><strong>Mar 2017 – Jul 2020</strong></p>
-                    <ul>
-                        <li>Developed features for vehicle diagnostics, battery status, and route optimization using Android Automotive OS.</li>
-                        <li>Integrated Google Maps for real-time traffic updates and optimized route guidance.</li>
-                        <li>Collaborated with cross-functional teams to ensure compliance with Android Automotive UX guidelines.</li>
-                    </ul>
-                    <p><a href="https://play.google.com/store/apps/details?id=com.thinksynq.lithiumsp">Play Store Link</a></p>
-                </div>
-            </div>
-
-            <div class="job">
-                <img src="fidelity-logo.png" alt="Fidelity National Financial Logo">
-                <div>
-                    <h3>Fidelity National Financial | Android Developer</h3>
-                    <p><strong>Aug 2020 – Jul 2022</strong></p>
-                    <ul>
-                        <li>Developed and maintained Android applications for multiple title insurance companies.</li>
-                        <li>Implemented push notifications for real-time updates and user engagement.</li>
-                        <li>Maintained a codebase using Java and Kotlin, following the MVP architectural design pattern.</li>
-                    </ul>
-                    <p><a href="https://play.google.com/store/apps/developer?id=Fidelity+National+Financial&hl=en_US&gl=US">Play Store Link</a></p>
-                </div>
-            </div>
-            
-            <div class="job">
-                <img src="michaels-logo.jpg" alt="Michaels Stores Logo">
-                <div>
-                    <h3>Michaels Stores | Sr. Android Developer</h3>
-                    <p><strong>Apr 2024 – Present</strong></p>
-                    <ul>
-                        <li>Developed, debugged, designed, validated, and deployed features using Android SDK, Java, and Kotlin.</li>
-                        <li>Optimized OS layer for improved performance in threading and real-time diagnostics.</li>
-                        <li>Actively participated in Agile/Scrum ceremonies.</li>
-                    </ul>
-                    <p><a href="https://play.google.com/store/apps/details?id=com.michaels.michaelsstores&pcampaignid=web_share">Play Store Link</a></p>
-                </div>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>Master of Science in Information Systems and Business Analytics, Park University (2024)</li>
-                <li>Bachelor of Technology, Visvesvaraya Technological University (VTU), Bangalore, India (2017)</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>Contact me on <a href="mailto:Mallesh.neelakantappa7@gmail.com">Mallesh.neelakantappa7@gmail.com</a> | GitHub: <a href="https://github.com/Mallesh2707">Mallesh2707</a> | LinkedIn: <a href="https://www.linkedin.com/in/mallesh-neelakantappa-06b420130">Mallesh Neelakantappa</a></p>
-        </footer>
-    </div>
-</body>
-</html>
+                <li>Proven track record of designing and delivering scalable applications.</li>
+                <li>Proficient in leveraging Jetpack components and integrating third-party APIs.</li>
+                <li>Strong background in asynchronous programming using Kotlin Coroutines
