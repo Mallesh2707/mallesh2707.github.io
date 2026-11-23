@@ -1,98 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Mallesh Neelakantappa - Android Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mallesh Neelakantappa, Android Software Engineer at PayPal in Austin, Texas. Mobile fintech, Kotlin, Jetpack Compose, and Android platform engineering.">
+  <title>Mallesh Neelakantappa | Android Software Engineer</title>
+  <style>
+    :root { color-scheme: dark; --bg: #111716; --panel: #192320; --line: #35433d; --fg: #f4f5ed; --muted: #bac8bf; --accent: #bcef87; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 1rem/1.6 system-ui, sans-serif; }
+    .wrap { width: min(100% - 2.5rem, 70rem); margin-inline: auto; }
+    a { color: var(--accent); text-underline-offset: .24em; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+    header, footer { border-block-end: 1px solid var(--line); }
+    header .wrap, footer .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem 2rem; padding-block: 1.1rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; }
+    header strong { letter-spacing: -.03em; }
+    .hero { display: grid; grid-template-columns: 1fr minmax(12rem, 19rem); gap: clamp(2rem, 7vw, 6rem); align-items: center; padding-block: clamp(3rem, 9vw, 7rem); }
+    .location { color: var(--accent); font-size: .82rem; letter-spacing: .16em; text-transform: uppercase; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: clamp(2.7rem, 6.5vw, 5.5rem); line-height: .99; letter-spacing: -.065em; margin-block: .8rem 1.2rem; }
+    .role { color: var(--accent); font-size: clamp(1.1rem, 2.7vw, 1.5rem); font-weight: 650; }
+    .intro { max-width: 37rem; margin-block: .85rem 1.6rem; font-size: 1.1rem; }
+    p { color: var(--muted); }
+    .portrait { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; border-radius: 1.4rem; border: 1px solid var(--line); }
+    .actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+    .actions a { border: 1px solid var(--line); border-radius: .55rem; padding: .6rem 1rem; text-decoration: none; font-weight: 650; }
+    .actions a:first-child { background: var(--accent); color: #172011; border-color: var(--accent); }
+    section { border-block-start: 1px solid var(--line); padding-block: 2.6rem 3.1rem; }
+    h2 { font-size: clamp(1.65rem, 4vw, 2.5rem); line-height: 1.15; letter-spacing: -.04em; margin-bottom: 1.3rem; }
+    h3 { font-size: 1.14rem; margin-bottom: .4rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: .85rem; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: .9rem; padding: 1.15rem; }
+    .experience article { display: grid; grid-template-columns: minmax(11rem, 1fr) 2fr; gap: .45rem 1.5rem; padding-block: 1rem; border-bottom: 1px solid var(--line); }
+    .experience h3 { margin: 0; }
+    footer { border-block-start: 1px solid var(--line); border-block-end: 0; }
+    @media (max-width: 42rem) { .hero, .experience article { grid-template-columns: 1fr; } .portrait { max-width: 15rem; } }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="cover-photo">
-                <img src="https://media.licdn.com/dms/image/C5612AQHdn7eC1YEUgg/article-cover_image-shrink_600_2000/0/1646721442724?e=2147483647&v=beta&t=8Dvmvy084A16E00IjAXkZ49g6eFLDTtph1w3OA-uA_M" alt="Cover Photo" class="cover-image">
-                <img src="malli-job-profile-pic.jpeg" alt="Mallesh Neelakantappa" class="profile-pic">
-            </div>
-            <h1>Mallesh Neelakantappa</h1>
-            <h2>Android Developer</h2>
-        </header>
-
-        <section id="contact-info">
-            <h2>Contact Information</h2>
-            <ul>
-                <li><strong>E-Mail:</strong> <a href="mailto:Mallesh.neelakantappa7@gmail.com">Mallesh.neelakantappa7@gmail.com</a></li>
-                <li><strong>Phone:</strong> +1 (945) 900 1556</li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mallesh-neelakantappa-06b420130">Mallesh Neelakantappa</a></li>
-            </ul>
-        </section>
-
-        <section id="summary">
-            <h2>Professional Summary</h2>
-            <ul>
-                <li>Android Developer with 6 years of experience in designing, developing, and maintaining Android applications.</li>
-                <li>Proficient in Java and Kotlin programming languages, with a strong understanding of Android SDK components.</li>
-                <li>Sound understanding of mobile app architectural patterns like MVVM, MVP, and MVC.</li>
-                <li>Experience with asynchronous programming concepts like Kotlin Coroutines and Java threads.</li>
-            </ul>
-        </section>
-
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            
-            <div class="job">
-                <img src="lithium-logo.png" alt="Lithium Urban Technologies Logo">
-                <div>
-                    <h3>Lithium Urban Technologies | Software Engineer Android</h3>
-                    <p><strong>Mar 2017 – Jul 2020</strong></p>
-                    <ul>
-                        <li>Developed features for vehicle diagnostics, battery status, and route optimization using Android Automotive OS.</li>
-                        <li>Integrated Google Maps for real-time traffic updates and optimized route guidance.</li>
-                        <li>Collaborated with cross-functional teams to ensure compliance with Android Automotive UX guidelines.</li>
-                    </ul>
-                    <p><a href="https://play.google.com/store/apps/details?id=com.thinksynq.lithiumsp">Play Store Link</a></p>
-                </div>
-            </div>
-
-            <div class="job">
-                <img src="fidelity-logo.png" alt="Fidelity National Financial Logo">
-                <div>
-                    <h3>Fidelity National Financial | Android Developer</h3>
-                    <p><strong>Aug 2020 – Jul 2022</strong></p>
-                    <ul>
-                        <li>Developed and maintained Android applications for multiple title insurance companies.</li>
-                        <li>Implemented push notifications for real-time updates and user engagement.</li>
-                        <li>Maintained a codebase using Java and Kotlin, following the MVP architectural design pattern.</li>
-                    </ul>
-                    <p><a href="https://play.google.com/store/apps/developer?id=Fidelity+National+Financial&hl=en_US&gl=US">Play Store Link</a></p>
-                </div>
-            </div>
-            
-            <div class="job">
-                <img src="michaels-logo.jpg" alt="Michaels Stores Logo">
-                <div>
-                    <h3>Michaels Stores | Sr. Android Developer</h3>
-                    <p><strong>Apr 2024 – Present</strong></p>
-                    <ul>
-                        <li>Developed, debugged, designed, validated, and deployed features using Android SDK, Java, and Kotlin.</li>
-                        <li>Optimized OS layer for improved performance in threading and real-time diagnostics.</li>
-                        <li>Actively participated in Agile/Scrum ceremonies.</li>
-                    </ul>
-                    <p><a href="https://play.google.com/store/apps/details?id=com.michaels.michaelsstores&pcampaignid=web_share">Play Store Link</a></p>
-                </div>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>Master of Science in Information Systems and Business Analytics, Park University (2024)</li>
-                <li>Bachelor of Technology, Visvesvaraya Technological University (VTU), Bangalore, India (2017)</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>Contact me on <a href="mailto:Mallesh.neelakantappa7@gmail.com">Mallesh.neelakantappa7@gmail.com</a> | GitHub: <a href="https://github.com/Mallesh2707">Mallesh2707</a> | LinkedIn: <a href="https://www.linkedin.com/in/mallesh-neelakantappa-06b420130">Mallesh Neelakantappa</a></p>
-        </footer>
+  <header><div class="wrap"><strong>Mallesh Neelakantappa</strong><nav aria-label="Portfolio"><a href="#focus">Technical focus</a><a href="#experience">Experience</a></nav></div></header>
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <p class="location">Austin, Texas</p>
+        <h1>Mallesh<br>Neelakantappa</h1>
+        <p class="role">Android Software Engineer at PayPal</p>
+        <p class="intro">I build Android experiences that help people discover financing options and manage their payment plans. I work across mobile UI, app architecture, and the tooling that helps teams ship reliably.</p>
+        <div class="actions"><a href="https://github.com/Mallesh2707">GitHub</a><a href="https://www.linkedin.com/in/mallesh-neelakantappa-06b420130">LinkedIn</a></div>
+      </div>
+      <img class="portrait" src="malli-job-profile-pic.jpeg" alt="Portrait of Mallesh Neelakantappa">
     </div>
+    <section id="focus">
+      <h2>Technical focus</h2>
+      <div class="grid">
+        <article class="card"><h3>Android product engineering</h3><p>Kotlin, Jetpack Compose, state-driven UI, and GraphQL integrations for consumer apps.</p></article>
+        <article class="card"><h3>Mobile architecture</h3><p>Modular features, reusable SDK interfaces, and navigation designed for testing.</p></article>
+        <article class="card"><h3>Reliability and tooling</h3><p>Production debugging, observability, and emulator-based test automation.</p></article>
+      </div>
+    </section>
+    <section class="experience" id="experience">
+      <h2>Selected experience</h2>
+      <article><h3>PayPal</h3><p>Android Software Engineer working on Pay Later acquisition and servicing experiences.</p></article>
+      <article><h3>Michaels Stores</h3><p>Built and maintained features for the Android retail app with Jetpack and MVVM. <a href="https://play.google.com/store/apps/details?id=com.michaels.michaelsstores">Michaels on Google Play</a></p></article>
+      <article><h3>Fidelity National Financial</h3><p>Developed Android apps with multi-company support, Google Maps, and Room.</p></article>
+      <article><h3>Vinfosoft Solutions</h3><p>Developed EV infotainment features for Lithium Urban Technologies using Android Automotive OS.</p></article>
+    </section>
+    <section><h2>Education</h2><p>Master’s in Information Technology</p></section>
+  </main>
+  <footer><div class="wrap"><p>Mallesh Neelakantappa</p><nav aria-label="Contact"><a href="https://github.com/Mallesh2707">GitHub</a><a href="https://www.linkedin.com/in/mallesh-neelakantappa-06b420130">LinkedIn</a></nav></div></footer>
 </body>
 </html>
